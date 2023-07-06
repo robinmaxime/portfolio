@@ -1,0 +1,36 @@
+.banner {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+
+    &__content {
+        flex-shrink: 0;
+    }
+
+    &__welcome {
+        color: $accentColor;
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 40px;
+    }
+
+    &__title {
+        color: $secondaryTextColor;
+        font-size: 48px;
+        font-weight: 800;
+    }
+
+    &__button {
+        margin-bottom: 60px;
+    }
+
+    &__image {
+        display: flex;
+        align-items: flex-end;
+        flex-shrink: 1;
+
+        & img {
+            width: 100%;
+        }
+    }
+}

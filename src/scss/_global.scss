@@ -1,0 +1,42 @@
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+body,
+ul,
+li,
+a,
+p,
+h1,
+h2,
+h3 {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 18px;
+    color: $primaryTextColor;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+.button {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: $accentColor;
+    border-radius: 50px;
+    color: white;
+    font-weight: 800;
+}

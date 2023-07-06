@@ -1,0 +1,26 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    margin-bottom: 100px;
+
+    &__logo {
+        width: 64px;
+    }
+
+    &__nav {
+        display: flex;
+        gap: 40px;
+        align-items: center;
+        & a {
+            font-weight: 800;
+        }
+        & a.active,
+        & a.inactive {
+            padding-bottom: 6px;
+        }
+        & a.active {
+            border-bottom: 3px solid $accentColor;
+        }
+    }
+}
