@@ -1,0 +1,26 @@
+.button {
+    display: inline-flex;
+    gap: 10px;
+    align-items: center;
+    padding: 8px 25px;
+    background-color: $accentColor;
+    border-radius: 50px;
+    color: white;
+    font-weight: 800;
+    transition: 0.3s;
+
+    &:hover {
+        background-color: darken($accentColor, 7%);
+    }
+
+    &--bordered {
+        background-color: transparent;
+        border: 2.5px solid $accentColor;
+        color: $accentColor;
+
+        &:hover {
+            background-color: $accentColor;
+            color: white;
+        }
+    }
+}

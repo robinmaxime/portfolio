@@ -15,12 +15,23 @@
         & a {
             font-weight: 800;
         }
+
+        & a.active {
+            border-bottom: 3px solid $accentColor;
+        }
+
+        & a.inactive {
+            border-bottom: 3px solid transparent;
+        }
+
         & a.active,
         & a.inactive {
             padding-bottom: 6px;
+            transition: 0.3s;
         }
-        & a.active {
-            border-bottom: 3px solid $accentColor;
+
+        & a.inactive:hover {
+            border-color: lighten($accentColor, 35%);
         }
     }
 }

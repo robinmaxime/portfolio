@@ -1,3 +1,5 @@
+import Button from '../Button';
+
 function Header() {
     return (
         <header className="header">
@@ -21,9 +23,11 @@ function Header() {
                 <a href="#projets" className="inactive">
                     Projets
                 </a>
-                <a href="#mecontacter" className="button">
-                    Contact
-                </a>
+                <Button
+                    title="Contact"
+                    link="#mecontacter"
+                    variant="bordered"
+                />
             </nav>
         </header>
     );

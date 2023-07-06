@@ -1,0 +1,56 @@
+.timeline {
+    position: relative;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-auto-flow: column;
+    gap: 5%;
+
+    &__line {
+        background-color: rgb(201, 201, 201);
+        height: 8px;
+        position: absolute;
+        bottom: 81px;
+        left: 0;
+        right: 0;
+        z-index: -1;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    &__title,
+    &__subtitle,
+    &__content {
+        text-align: center;
+    }
+
+    &__title {
+        display: flex;
+        align-items: flex-end;
+        font-size: 30px;
+        font-weight: 700;
+        height: 70px;
+    }
+
+    &__subtitle {
+        font-size: 21px;
+        font-weight: 700;
+        color: $accentColor;
+    }
+
+    &__content {
+        font-weight: 600;
+    }
+
+    &__dot {
+        border-radius: 15px;
+        background-color: $accentColor;
+        width: 30px;
+        height: 30px;
+        margin-top: 30px;
+    }
+}
