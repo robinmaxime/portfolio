@@ -7,7 +7,7 @@ import { faFilePdf } from '@fortawesome/free-solid-svg-icons';
 
 function Presentation() {
     return (
-        <div className="container presentation">
+        <div id="presentation" className="container presentation">
             <div className="presentation__main">
                 <div className="presentation__text">
                     <h2 className="presentation__title">Présentation</h2>

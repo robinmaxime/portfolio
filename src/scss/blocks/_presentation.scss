@@ -1,7 +1,8 @@
 .presentation {
-    margin-bottom: 1000px;
+    margin-bottom: 100px;
     &__main {
         display: flex;
+        flex-direction: row-reverse;
         gap: 100px;
         margin-bottom: 50px;
     }
