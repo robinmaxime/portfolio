@@ -1,6 +1,12 @@
 .banner {
-    display: flex;
-    align-items: flex-end;
+    padding-top: 70px;
+    background-color: $primaryBackgroundColor;
+    margin-bottom: 100px;
+
+    &__container {
+        display: flex;
+        align-items: flex-end;
+    }
 
     &__content {
         padding-left: 60px;
