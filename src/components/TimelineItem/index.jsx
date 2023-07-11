@@ -1,5 +1,12 @@
 import PropTypes from 'prop-types';
 
+/**
+ * Composant affichant un des éléments de la timeline
+ * @param {string} title Titre de l'élément de la timeline
+ * @param {string} subtitle Sous titre de l'élément de la timeline
+ * @param {string} content contenu de l'élément de la timeline
+ * @returns JSX.element
+ */
 function TimelineItem({ title, subtitle, content }) {
     return (
         <div className="timeline__item">

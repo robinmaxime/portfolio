@@ -1,6 +1,13 @@
+import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 
+/**
+ * Composant affichant la modale
+ * @param {Bool} isOpen definit l'état de la modale
+ * @param {func} handleClose méthode à éxecuter pour fermer la modale
+ * @returns JSX.element
+ */
 function Modal({ children, isOpen, handleClose }) {
     return (
         <div
@@ -19,5 +26,10 @@ function Modal({ children, isOpen, handleClose }) {
         </div>
     );
 }
+
+Modal.propTypes = {
+    isOpen: PropTypes.func.isRequired,
+    handleClose: PropTypes.func.isRequired,
+};
 
 export default Modal;

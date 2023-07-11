@@ -5,6 +5,10 @@ import Button from '../../components/Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFilePdf } from '@fortawesome/free-solid-svg-icons';
 
+/**
+ * Composant affichant la section "Présentation"
+ * @returns JSX.element
+ */
 function Presentation() {
     return (
         <div id="presentation" className="container presentation">
@@ -23,7 +27,7 @@ function Presentation() {
                     <p>
                         <Button
                             title="Télécharger mon CV"
-                            link="/assets/cv.pdf"
+                            url="/assets/cv.pdf"
                             icon={<FontAwesomeIcon icon={faFilePdf} />}
                         />
                     </p>

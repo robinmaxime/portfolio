@@ -1,5 +1,12 @@
+import PropTypes from 'prop-types';
 import { useState } from 'react';
 
+/**
+ * Composant affichant le filtre
+ * @param {array} categories liste des categories avec leur id et leur nom
+ * @param {func} onChange méthode à executer à chaque changement
+ * @returns JSX.element
+ */
 function Filter({ categories, onChange }) {
     const [selectedCategoryId, setSelectedCategoryId] = useState(0);
     const newCategories = [{ id: 0, name: 'Tous' }, ...categories];
@@ -28,5 +35,10 @@ function Filter({ categories, onChange }) {
         </div>
     );
 }
+
+Filter.propTypes = {
+    categories: PropTypes.string.isRequired,
+    onChange: PropTypes.func.isRequired,
+};
 
 export default Filter;

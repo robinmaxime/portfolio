@@ -1,9 +1,17 @@
 import PropTypes from 'prop-types';
 
-function Button({ title, variant, link, icon }) {
+/**
+ * Commosant permettant de créer un button et sa variante
+ * @param {string} title Titre du bouton
+ * @param {string} variant nom de la variante du bouton (ex: bordered) : optionnel
+ * @param {string} url  destination du lien
+ * @param {string} icon  nom de l'icone : optionnel
+ * @returns JSX.element
+ */
+function Button({ title, variant, url, icon }) {
     return (
         <a
-            href={link}
+            href={url}
             className={`button ${variant ? 'button--' + variant : ''}`}
         >
             {icon}

@@ -1,7 +1,9 @@
 import { createContext, useEffect, useState } from 'react';
 
+// Création du contexte
 export const ProjectsContext = createContext();
 
+// contexte permettant de charger et de partager la liste des projets
 export const ProjectsProvider = ({ children }) => {
     const [projects, setProjects] = useState([]);
     const [categories, setCategories] = useState([]);

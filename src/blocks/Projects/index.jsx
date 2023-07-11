@@ -3,11 +3,18 @@ import Filter from '../../components/Filter';
 import { ProjectsContext } from '../../contexts/projects_context';
 import Card from '../../components/Card';
 
+/**
+ * Composant affichant la section "Projets"
+ * @returns JSX.element
+ */
 function Projects() {
+    // Vient se plugger au context
     const { projects, categories, isError, isLoading } =
         useContext(ProjectsContext);
+
     const [categoryId, setCategoryId] = useState(0);
 
+    // Filtre les projets par leur categoryId
     const filteredProjects =
         categoryId === 0
             ? projects

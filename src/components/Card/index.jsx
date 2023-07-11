@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { useState, useContext } from 'react';
 import { ProjectsContext } from '../../contexts/projects_context';
 import Tags from '../Tags';
@@ -5,10 +6,19 @@ import Modal from '../Modal';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
+/**
+ * Compoant affichant une card de projet
+ * @param {int} projectId Id du projet
+ * @returns JSX.element
+ */
 function Card({ projectId }) {
     const [hiddenDetails, setHiddenDetails] = useState(true);
     const [modalIsOpened, setModalIsOpened] = useState(false);
+
+    // Vient se plugger au context du projet
     const { projects } = useContext(ProjectsContext);
+
+    // Récupère le projet selon l'id
     const project = projects.find((project) => {
         return project.id === projectId;
     });
@@ -98,5 +108,9 @@ function Card({ projectId }) {
         </div>
     );
 }
+
+Card.propTypes = {
+    projectId: PropTypes.string.isRequired,
+};
 
 export default Card;

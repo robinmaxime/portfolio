@@ -2,6 +2,10 @@ import Button from '../../components/Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 
+/**
+ * Composant affichant la section "Banner"
+ * @returns JSX.element
+ */
 function Banner() {
     return (
         <div id="banner" className="banner">
@@ -13,7 +17,7 @@ function Banner() {
                     </h1>
                     <Button
                         title="Mes projets"
-                        link="#projects"
+                        url="#projects"
                         icon={<FontAwesomeIcon icon={faArrowDown} />}
                     />
                 </div>

@@ -1,8 +1,14 @@
 import { useState, useEffect } from 'react';
 import Button from '../../components/Button';
 
+/**
+ * Composant affichant le header
+ * @returns JSX.element
+ */
 function Header() {
     const [stickyClass, setStickyClass] = useState('');
+
+    // Ajoute une classe 'header--sticky' quand le scroll est > 10
     function handleScroll() {
         const windowHeight = window.scrollY;
         windowHeight > 10
@@ -10,6 +16,7 @@ function Header() {
             : setStickyClass('');
     }
 
+    // Observe l'évènement scroll
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
     }, []);
@@ -39,7 +46,7 @@ function Header() {
                     </a>
                     <Button
                         title="Contact"
-                        link="#mecontacter"
+                        url="#mecontacter"
                         variant="bordered"
                     />
                 </nav>
