@@ -1,0 +1,190 @@
+{
+    "categories": [
+        {
+            "id": 1,
+            "name": "Front-end"
+        },
+        {
+            "id": 2,
+            "name": "Back-end"
+        },
+        {
+            "id": 4,
+            "name": "Gestion de projet"
+        }
+    ],
+    "projects": [
+        {
+            "id": 1,
+            "title": "Booki",
+            "description": "Location d'appartement entre particuliers",
+            "context": "L'entreprise Booki souhaite développer un site internet qui permette aux usagers de trouver des hébergements et des activités dans la ville de leur choix. J'ai été chargé d'intégrer l'interface du site avec du code HTML et CSS.",
+            "challenge": "Dans ce projet il a fallu respecter les spécifications et contraintes techniques regroupées dans la note de synthèse qui nous était fournie ainsi que la maquette. Il a fallu notamment que les cartes 'hébergement' soit cliquables dans leur entièreté, le site devait être responsive avec 3 breakpoint donnés et le code devait être passé aux validateurs W3C.",
+            "categoryId": 1,
+            "images": [
+                {
+                    "url": "/assets/projects/booki400w.webp",
+                    "type": "webp",
+                    "media": "(max-width: 500px)"
+                },
+                {
+                    "url": "/assets/projects/booki700w.webp",
+                    "type": "webp",
+                    "media": "(min-width: 501px) and (max-width: 900px)"
+                },
+                { "url": "/assets/projects/booki1000w.webp", "type": "webp" },
+                { "url": "/assets/projects/booki1000w.jpg", "fallback": true }
+            ],
+            "link": "https://github.com/robinmaxime/OCProject2.git",
+            "technologies": ["html", "css"],
+            "year": 2023
+        },
+        {
+            "id": 2,
+            "title": "Sophie Bluel",
+            "description": "Portfolio de Sophie Bluel, architecte intérieur",
+            "context": "Notre cliente, Sophie Bluel, souhaite que nous lui developpions un portfolio avec ses différents projets d'architecte. J'ai été chargé de développer la partie front-end en Javascript.",
+            "challenge": "Dans ce projet, il a fallu que je développe les fonctions de la page de présentation, la page de connexion de l'administrateur du site et la modale permettant d'uploader de nouveau médias. Il a fallu faire en sorte que le site se mette à jour sans qu'il n'y ait de rafraichissement de la page en manipulant le DOM.",
+            "categoryId": 1,
+            "images": [
+                {
+                    "url": "/assets/projects/sophiebluel400w.webp",
+                    "type": "webp",
+                    "media": "(max-width: 500px)"
+                },
+                {
+                    "url": "/assets/projects/sophiebluel700w.webp",
+                    "type": "webp",
+                    "media": "(min-width: 501px) and (max-width: 900px)"
+                },
+                {
+                    "url": "/assets/projects/sophiebluel1000w.webp",
+                    "type": "webp"
+                },
+                {
+                    "url": "/assets/projects/sophiebluel1000w.jpg",
+                    "fallback": true
+                }
+            ],
+            "link": "https://github.com/robinmaxime/Portfolio-architecte-sophie-bluel-master.git",
+            "technologies": ["html", "css", "javascript"],
+            "year": 2023
+        },
+        {
+            "id": 3,
+            "title": "Menu Maker By Qwenta",
+            "description": "Planifier le développement du site Menu Maker By Qwenta",
+            "context": "Notre client Qwenta souhaite faire développer un 'Menu Maker', site permettant aux restaurateurs d'afficher et de mettre  en page leurs menus facilement. J'ai été chargé de préparer et planifier le projet.",
+            "challenge": "Dans ce projet en AGILE, il a fallu commencer par développer un système de veille qui pourrait être réutilisé par l'équipe. Dans un second temps, il a fallu remplir les spécifications techniques du projet en justifiant mes choix. Enfin, j'ai dû faire la planification du projet via un logiciel (Notion) à travers des KANBAN et un diagramme de GANTT et présenter tout cela au client.",
+            "categoryId": 4,
+            "images": [
+                {
+                    "url": "/assets/projects/menumaker400w.webp",
+                    "type": "webp",
+                    "media": "(max-width: 500px)"
+                },
+                {
+                    "url": "/assets/projects/menumaker700w.webp",
+                    "type": "webp",
+                    "media": "(min-width: 501px) and (max-width: 900px)"
+                },
+                {
+                    "url": "/assets/projects/menumaker1000w.webp",
+                    "type": "webp"
+                },
+                {
+                    "url": "/assets/projects/menumaker1000w.jpg",
+                    "fallback": true
+                }
+            ],
+            "year": 2023
+        },
+        {
+            "id": 4,
+            "title": "Nina Carducci",
+            "description": "Optimisation du site d'une photographe : Nina Carducci",
+            "context": "Nina Carducci possède un portfolio comprenant beaucoup d'images. Son site n'est pas bien optimisé et quelques bugs sont présents. Après audit, je lui propose d'optimiser les images, le code et sa structure de son site et de corriger les bugs. ",
+            "challenge": "Dans ce projet, il a fallu faire un audit LightHouse avant/après pour voir d'où venaient les soucis d'optimisation. J'ai donc travaillé sur l'optimisation des images (taille, format, etc), sur la minification des fichiers JS et CSS et sur l'optimisation SEO (notamment des rich snippets). Il a également fallu travailler sur l'accessibilité en réorganisant le code et en respectant les règles de la WCAG. J'ai enfin corrigé les bugs présents dans le code Javascript.",
+            "categoryId": 1,
+            "images": [
+                {
+                    "url": "/assets/projects/ninacarducci400w.webp",
+                    "type": "webp",
+                    "media": "(max-width: 500px)"
+                },
+                {
+                    "url": "/assets/projects/ninacarducci700w.webp",
+                    "type": "webp",
+                    "media": "(min-width: 501px) and (max-width: 900px)"
+                },
+                {
+                    "url": "/assets/projects/ninacarducci1000w.webp",
+                    "type": "webp"
+                },
+                {
+                    "url": "/assets/projects/ninacarducci1000w.jpg",
+                    "fallback": true
+                }
+            ],
+            "link": "https://github.com/robinmaxime/nina-carducci.github.io-master.git",
+            "technologies": ["html", "css", "javascript"],
+            "year": 2023
+        },
+        {
+            "id": 5,
+            "title": "Kasa",
+            "description": "Créez une application web de location immobilière avec React : Kasa",
+            "context": "Je suis recruté par Kasa, leader de la location d'appartements entre particulier, en tant que freelance pour développer sa nouvelle platforme web. Le site a été codé il y a plus 10 de ans en ASP.NET et j'ai été chargé de recoder le site en React.",
+            "challenge": "Dans ce projet, il a fallu partir de la maquette fournie et coder depuis zéro le front-end avec React et React-Router. Parmi les défis à relever : créer différentes routes dans le router, créer des boites de texte ouvrables et fermables, créer un carroussel cyclique et enfin rediriger vers une page d'erreur en cas d'erreur d'URL. Tout le site devait être responsive.",
+            "categoryId": 1,
+            "images": [
+                {
+                    "url": "/assets/projects/kasa400w.webp",
+                    "type": "webp",
+                    "media": "(max-width: 500px)"
+                },
+                {
+                    "url": "/assets/projects/kasa700w.webp",
+                    "type": "webp",
+                    "media": "(min-width: 501px) and (max-width: 900px)"
+                },
+                { "url": "/assets/projects/kasa1000w.webp", "type": "webp" },
+                { "url": "/assets/projects/kasa1000w.jpg", "fallback": true }
+            ],
+            "link": "https://github.com/robinmaxime/kasa.git",
+            "technologies": ["html", "sass", "react"],
+            "year": 2023
+        },
+        {
+            "id": 6,
+            "title": "Mon vieux grimoire",
+            "description": "Développer le back-end d'une chaîne de librairies",
+            "context": "La chaîne de librairies souhaite ouvrir un site de notation de livres qui permettra au membres d'ajouter un nouveau livre et de mettre une note visible par le public. J'ai été chargé de developper la partie back end du site en node.js.",
+            "challenge": "Dans ce projet, il a fallu suivre le cahier des charges fourni. J'ai commencé par créer le serveur et le router grâce au framework Express et paramétrer le base de données MongoDB grâce à la bibliothèque Mongoose. J'ai créé différents middlewares pour l'authentification, la gestion des requêtes multipart et pour le retraitement des images (green code). Enfin grâce aux méthodes HTTP, j'ai créé différents controlleurs pour manipuler la base de données.",
+            "categoryId": 2,
+            "images": [
+                {
+                    "url": "/assets/projects/monvieuxgrimoire400w.webp",
+                    "type": "webp",
+                    "media": "(max-width: 500px)"
+                },
+                {
+                    "url": "/assets/projects/monvieuxgrimoire700w.webp",
+                    "type": "webp",
+                    "media": "(min-width: 501px) and (max-width: 900px)"
+                },
+                {
+                    "url": "/assets/projects/monvieuxgrimoire1000w.webp",
+                    "type": "webp"
+                },
+                {
+                    "url": "/assets/projects/monvieuxgrimoire1000w.jpg",
+                    "fallback": true
+                }
+            ],
+            "link": "https://github.com/robinmaxime/Mon-vieux-grimoire.git",
+            "technologies": ["nodejs", "express", "mongodb", "mongoose"],
+            "year": 2023
+        }
+    ]
+}
