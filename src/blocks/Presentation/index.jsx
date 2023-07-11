@@ -12,12 +12,13 @@ function Presentation() {
                 <div className="presentation__text">
                     <h2 className="presentation__title">Présentation</h2>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Suscipit blanditiis quas repudiandae ipsam molestias
-                        quidem porro numquam non. Aliquid eaque dolorum
-                        provident, eveniet harum atque ad vitae, repudiandae
-                        modi hic sit laudantium neque officia quaerat, non
-                        repellendus odio quam.
+                        Bonjour, moi c'est Maxime ROBIN,{' '}
+                        <strong>développeur web junior</strong>! Passionné par
+                        les nouvelles technologies, j'ai découvert le code il y
+                        a quelques temps et ai tout de suite accroché. J'ai donc
+                        décidé de me reconvertir en tant que développeur web en
+                        passant une <strong>formation diplomante</strong> auprès
+                        d'OpenClassrooms.
                     </p>
                     <p>
                         <Button

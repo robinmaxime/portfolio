@@ -16,6 +16,7 @@ p,
 h1,
 h2,
 h3,
+h4,
 button {
     margin: 0;
     padding: 0;
@@ -33,8 +34,16 @@ h2 {
     font-weight: 800;
 }
 
+strong {
+    font-weight: 700;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 50px;
+}
+
+.hidden {
+    opacity: 0;
 }

@@ -51,6 +51,7 @@
     &__tab-panel {
         display: none;
         padding: 50px 80px;
+        min-height: 250px;
 
         &--selected {
             display: block;
