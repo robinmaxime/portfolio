@@ -1,0 +1,44 @@
+[
+    {
+        "title": "Front-end",
+        "skills": [
+            {
+                "icon": "/assets/icons/html.png",
+                "label": "html"
+            },
+            { "icon": "/assets/icons/css.png", "label": "css" },
+            { "icon": "/assets/icons/sass.png", "label": "sass" },
+            { "icon": "/assets/icons/javascript.png", "label": "javascript" },
+            { "icon": "/assets/icons/react.png", "label": "react" }
+        ]
+    },
+    {
+        "title": "Back-end",
+        "skills": [
+            {
+                "icon": "/assets/icons/nodejs.png",
+                "label": "nodejs"
+            },
+            { "icon": "/assets/icons/express.png", "label": "express" },
+            { "icon": "/assets/icons/mongodb.png", "label": "mongodb" },
+            { "icon": "/assets/icons/mongoose.png", "label": "mongoose" }
+        ]
+    },
+    {
+        "title": "Autres",
+        "skills": [
+            {
+                "icon": "/assets/icons/vscode.png",
+                "label": "vscode"
+            },
+            {
+                "icon": "/assets/icons/notion.png",
+                "label": "notion"
+            },
+            {
+                "icon": "/assets/icons/github.png",
+                "label": "github"
+            }
+        ]
+    }
+]
