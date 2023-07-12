@@ -21,6 +21,7 @@ function Filter({ categories, onChange }) {
         <div className="filter">
             {newCategories.map((category) => (
                 <a
+                    key={`category-${category.id}`}
                     href="#button"
                     className={`filter__button ${
                         category.id === selectedCategoryId

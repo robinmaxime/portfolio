@@ -50,15 +50,17 @@ function Card({ projectId }) {
                 {project.title}
             </h3>
             <picture>
-                {project.images.map((image) =>
+                {project.images.map((image, index) =>
                     image.fallback ? (
                         <img
+                            key={`source-${index}`}
                             className="card__image"
                             src={image.url}
                             alt={project.title}
                         />
                     ) : (
                         <source
+                            key={`source-${index}`}
                             srcSet={image.url}
                             type={`image/${image.type}`}
                             media={image.media}

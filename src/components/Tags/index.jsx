@@ -8,8 +8,8 @@ import PropTypes from 'prop-types';
 function Tags({ items, replaceByIcon }) {
     return (
         <div className="tags">
-            {items.map((item) => (
-                <div className="tags__item">
+            {items.map((item, index) => (
+                <div key={`tag-${index}`} className="tags__item">
                     {replaceByIcon ? (
                         <img src={`/assets/icons/${item}.png`} alt={item} />
                     ) : (
