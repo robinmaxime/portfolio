@@ -37,7 +37,7 @@ function Filter({ categories, onChange }) {
 }
 
 Filter.propTypes = {
-    categories: PropTypes.string.isRequired,
+    categories: PropTypes.array.isRequired,
     onChange: PropTypes.func.isRequired,
 };
 

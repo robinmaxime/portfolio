@@ -23,8 +23,8 @@ function Button({ title, variant, url, icon }) {
 Button.propTypes = {
     title: PropTypes.string.isRequired,
     variant: PropTypes.string,
-    link: PropTypes.string.isRequired,
-    icon: PropTypes.string,
+    url: PropTypes.string.isRequired,
+    icon: PropTypes.object,
 };
 
 export default Button;

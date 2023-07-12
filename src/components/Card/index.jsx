@@ -110,7 +110,7 @@ function Card({ projectId }) {
 }
 
 Card.propTypes = {
-    projectId: PropTypes.string.isRequired,
+    projectId: PropTypes.number.isRequired,
 };
 
 export default Card;
