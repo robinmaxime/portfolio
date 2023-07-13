@@ -9,7 +9,11 @@
     font-weight: 800;
     transition: 0.3s;
 
-    &:hover {
+    &[disabled] {
+        background-color: darkgrey;
+    }
+
+    &:hover :not([disabled]) {
         background-color: darken($accentColor, 7%);
     }
 
