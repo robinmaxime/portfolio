@@ -2,6 +2,10 @@ import { useEffect, useState } from 'react';
 import '../../../node_modules/react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 
+/**
+ * Composant affichant la section "Compétences"
+ * @returns JSX.element
+ */
 function Skills() {
     const [skills, setSkills] = useState([]);
 
