@@ -3,6 +3,7 @@ import Banner from './blocks/Banner';
 import Presentation from './blocks/Presentation';
 import Skills from './blocks/Skills';
 import Projects from './blocks/Projects';
+import Footer from './blocks/Footer';
 import { ProjectsProvider } from './contexts/projects_context';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
             <ProjectsProvider>
                 <Projects />
             </ProjectsProvider>
+            <Footer />
         </div>
     );
 }

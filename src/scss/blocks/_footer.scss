@@ -1,0 +1,32 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: $primaryBackgroundColor;
+    padding: 50px 0;
+    font-size: 16px;
+    font-weight: 700;
+    &__mention {
+        cursor: pointer;
+        font-size: 16px;
+    }
+    &__mention:hover {
+        text-decoration: underline;
+        color: $accentColor;
+    }
+    & .modal {
+        & h3 {
+            text-align: center;
+            font-weight: 700;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        & h4 {
+            font-weight: 700;
+            font-size: 18px;
+            margin: 18px 0;
+        }
+    }
+}
