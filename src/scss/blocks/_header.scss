@@ -16,6 +16,7 @@
 
     &__logo {
         width: 64px;
+        cursor: pointer;
     }
 
     &__nav {
@@ -36,12 +37,13 @@
 
         & a.active,
         & a.inactive {
-            padding-bottom: 6px;
+            border-top: 3px solid transparent;
+            padding: 6px 0;
             transition: 0.3s;
         }
 
         & a.inactive:hover {
-            border-color: lighten($accentColor, 35%);
+            border-bottom-color: lighten($accentColor, 35%);
         }
     }
 }

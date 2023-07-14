@@ -6,13 +6,15 @@ import PropTypes from 'prop-types';
  * @param {string} variant nom de la variante du bouton (ex: bordered) : optionnel
  * @param {string} url  destination du lien
  * @param {string} icon  nom de l'icone : optionnel
+ * @param {func} onClick fonction à éxecuter au click sur le boutton
  * @returns JSX.element
  */
-function Button({ title, variant, url, icon }) {
+function Button({ title, variant, url, icon, onClick }) {
     return (
         <a
             href={url}
             className={`button ${variant ? 'button--' + variant : ''}`}
+            onClick={onClick}
         >
             {icon}
             {title}
