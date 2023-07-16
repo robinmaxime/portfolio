@@ -34,6 +34,11 @@ function Card({ projectId }) {
                 onClick={() => setModalIsOpened(true)}
             >
                 <div className="details__title">{project.title}</div>
+                {project.education ? (
+                    <div className="details__education">
+                        – projet de formation –
+                    </div>
+                ) : null}
                 <div className="details__description">
                     {project.description}
                 </div>

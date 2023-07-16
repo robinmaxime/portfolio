@@ -37,7 +37,8 @@
             ],
             "link": "https://github.com/robinmaxime/OCProject2.git",
             "technologies": ["html", "css"],
-            "year": 2023
+            "year": 2023,
+            "education": true
         },
         {
             "id": 2,
@@ -68,7 +69,8 @@
             ],
             "link": "https://github.com/robinmaxime/Portfolio-architecte-sophie-bluel-master.git",
             "technologies": ["html", "css", "javascript"],
-            "year": 2023
+            "year": 2023,
+            "education": true
         },
         {
             "id": 3,
@@ -97,7 +99,8 @@
                     "fallback": true
                 }
             ],
-            "year": 2023
+            "year": 2023,
+            "education": true
         },
         {
             "id": 4,
@@ -128,12 +131,13 @@
             ],
             "link": "https://github.com/robinmaxime/nina-carducci.github.io-master.git",
             "technologies": ["html", "css", "javascript"],
-            "year": 2023
+            "year": 2023,
+            "education": true
         },
         {
             "id": 5,
             "title": "Kasa",
-            "description": "Créez une application web de location immobilière avec React : Kasa",
+            "description": "Créez une application web de location immobilière avec React",
             "context": "Je suis recruté par Kasa, leader de la location d'appartements entre particulier, en tant que freelance pour développer sa nouvelle platforme web. Le site a été codé il y a plus 10 de ans en ASP.NET et j'ai été chargé de recoder le site en React.",
             "challenge": "Dans ce projet, il a fallu partir de la maquette fournie et coder depuis zéro le front-end avec React et React-Router. Parmi les défis à relever : créer différentes routes dans le router, créer des boites de texte ouvrables et fermables, créer un carroussel cyclique et enfin rediriger vers une page d'erreur en cas d'erreur d'URL. Tout le site devait être responsive.",
             "categoryId": 1,
@@ -153,7 +157,8 @@
             ],
             "link": "https://github.com/robinmaxime/kasa.git",
             "technologies": ["html", "sass", "react"],
-            "year": 2023
+            "year": 2023,
+            "education": true
         },
         {
             "id": 6,
@@ -184,7 +189,8 @@
             ],
             "link": "https://github.com/robinmaxime/Mon-vieux-grimoire.git",
             "technologies": ["nodejs", "express", "mongodb", "mongoose"],
-            "year": 2023
+            "year": 2023,
+            "education": true
         }
     ]
 }
