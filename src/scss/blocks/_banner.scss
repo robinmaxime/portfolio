@@ -1,6 +1,10 @@
 .banner {
-    padding-top: 70px;
+    display: flex;
+    align-items: flex-end;
     background-color: $primaryBackgroundColor;
+    min-height: 340px;
+    height: 50vh;
+    max-height: 500px;
 
     &__container {
         display: flex;
@@ -21,9 +25,12 @@
     }
 
     &__title {
+        margin-top: 12px;
+        display: block;
         color: $secondaryTextColor;
         font-size: 48px;
         font-weight: 800;
+        line-height: 85%;
     }
 
     &__image {
