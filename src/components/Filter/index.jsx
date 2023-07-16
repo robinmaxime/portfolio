@@ -20,9 +20,8 @@ function Filter({ categories, onChange }) {
     return (
         <div className="filter">
             {newCategories.map((category) => (
-                <a
+                <button
                     key={`category-${category.id}`}
-                    href="#button"
                     className={`filter__button ${
                         category.id === selectedCategoryId
                             ? 'filter__button--active'
@@ -31,7 +30,7 @@ function Filter({ categories, onChange }) {
                     onClick={() => handleClick(category.id)}
                 >
                     {category.name}
-                </a>
+                </button>
             ))}
         </div>
     );
