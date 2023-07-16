@@ -28,7 +28,12 @@ function Footer() {
                         Téléphone : +33 (0)6.23.52.06.34
                     </p>
                     <h4>Hébergement</h4>
-                    <p></p>
+                    <p>
+                        o2switch <br />
+                        Chemin des Pardiaux <br />
+                        63000 Clermont-Ferrand <br />
+                        France
+                    </p>
                     <h4>Crédit</h4>
                     <p>
                         <a href="https://www.freepik.com/free-vector/cute-man-working-computer-with-coffee-cartoon-vector-icon-illustration-people-technology-icon-concept-isolated-premium-vector-flat-cartoon-style_20188201.htm#query=on%20a%20computer&position=7&from_view=keyword&track=ais">
