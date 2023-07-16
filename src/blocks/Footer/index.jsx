@@ -8,7 +8,7 @@ import Modal from '../../components/Modal';
 function Footer() {
     const [isOpened, setIsOpened] = useState(false);
     return (
-        <div className="footer">
+        <footer className="footer">
             <div>Maxime ROBIN, tous droits réservés 2023</div>
             <button
                 className="footer__mention"
@@ -38,7 +38,7 @@ function Footer() {
                     </p>
                 </div>
             </Modal>
-        </div>
+        </footer>
     );
 }
 

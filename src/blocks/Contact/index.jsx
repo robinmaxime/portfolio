@@ -40,7 +40,7 @@ function Contact() {
     }
 
     return (
-        <div id="contact" className="contact container">
+        <section id="contact" className="contact container">
             <h2 className="contact__title">Contact</h2>
             {formSent || formError ? (
                 <div
@@ -97,7 +97,7 @@ function Contact() {
                     </div>
                 </form>
             )}
-        </div>
+        </section>
     );
 }
 

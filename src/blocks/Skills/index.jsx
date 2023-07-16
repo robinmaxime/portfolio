@@ -20,7 +20,7 @@ function Skills() {
         loadSkills();
     }, []);
     return (
-        <div id="skills" className="skills">
+        <section id="skills" className="skills">
             <h2 className="skills__title">Compétences</h2>
             {skills.length > 0 ? (
                 <Carousel
@@ -56,7 +56,7 @@ function Skills() {
             ) : (
                 <div></div>
             )}
-        </div>
+        </section>
     );
 }
 

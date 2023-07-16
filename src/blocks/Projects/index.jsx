@@ -23,7 +23,7 @@ function Projects() {
               });
 
     return (
-        <div id="projects" className="projects">
+        <section id="projects" className="projects">
             <h2 className="projects__title">Projets</h2>
             <Filter categories={categories} onChange={setCategoryId} />
             <div className="projects__gallery">
@@ -34,7 +34,7 @@ function Projects() {
                     />
                 ))}
             </div>
-        </div>
+        </section>
     );
 }
 

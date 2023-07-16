@@ -8,7 +8,7 @@ import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
  */
 function Banner() {
     return (
-        <div id="banner" className="banner">
+        <section id="banner" className="banner">
             <div className="banner__container container">
                 <div className="banner__content">
                     <h1 className="banner__welcome">
@@ -28,7 +28,7 @@ function Banner() {
                     />
                 </div>
             </div>
-        </div>
+        </section>
     );
 }
 
