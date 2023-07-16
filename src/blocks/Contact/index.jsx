@@ -63,6 +63,7 @@ function Contact() {
                         id="name"
                         required
                         placeholder="Nom *"
+                        aria-labelledby="name"
                     ></input>
                     <input
                         type="email"
@@ -70,12 +71,14 @@ function Contact() {
                         id="email"
                         required
                         placeholder="Email *"
+                        aria-labelledby="email"
                     ></input>
                     <input
                         type="text"
                         name="object"
                         id="object"
                         placeholder="Objet"
+                        aria-labelledby="object"
                     ></input>
                     <textarea
                         name="message"
@@ -83,6 +86,7 @@ function Contact() {
                         required
                         placeholder="Message *"
                         rows="5"
+                        aria-labelledby="message"
                     ></textarea>
                     <div className="form__send">
                         <span></span>
