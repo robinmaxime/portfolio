@@ -9,6 +9,17 @@ function Footer() {
     const [isOpened, setIsOpened] = useState(false);
     return (
         <footer className="footer">
+            <div className="footer__logos">
+                <a href="https://github.com/robinmaxime">
+                    <img
+                        src="/../../assets/icons/github.png"
+                        alt="logo github"
+                    />
+                </a>
+                <a href="https://www.linkedin.com/in/maxime-robin-5a089a219">
+                    <img src="/../../assets/icons/in.png" alt="logo linkedIn" />
+                </a>
+            </div>
             <div>Maxime ROBIN, tous droits réservés 2023</div>
             <button
                 className="footer__mention"

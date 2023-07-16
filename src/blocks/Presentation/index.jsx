@@ -24,13 +24,21 @@ function Presentation() {
                         passant une <strong>formation diplomante</strong> auprès
                         d'OpenClassrooms.
                     </p>
-                    <p>
+                    <div className="presentation__links">
                         <Button
                             title="Télécharger mon CV"
                             url="/assets/cv.pdf"
                             icon={<FontAwesomeIcon icon={faFilePdf} />}
                         />
-                    </p>
+
+                        <a href="https://www.linkedin.com/in/maxime-robin-5a089a219">
+                            <img
+                                src="/../../assets/icons/linkedin.png"
+                                alt="logo de linkedIn"
+                                width="128"
+                            />
+                        </a>
+                    </div>
                 </div>
                 <div className="presentation__image">
                     <img src="/assets/portrait.jpg" alt="Maxime ROBIN" />
