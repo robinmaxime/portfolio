@@ -118,7 +118,7 @@ function Header() {
                         Présentation
                     </a>
                     <a
-                        href="#competences"
+                        href="#skills"
                         className={
                             menuItemSelected === 'skills'
                                 ? 'active'
@@ -141,7 +141,7 @@ function Header() {
                     </a>
                     <Button
                         title="Contact"
-                        url="#mecontacter"
+                        url="#contact"
                         variant={
                             menuItemSelected === 'contact' ? null : 'bordered'
                         }
