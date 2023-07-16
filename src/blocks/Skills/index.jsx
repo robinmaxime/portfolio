@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import '../../../node_modules/react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
+import Loader from '../../components/Loader';
 
 /**
  * Composant affichant la section "Compétences"
@@ -8,6 +9,8 @@ import { Carousel } from 'react-responsive-carousel';
  */
 function Skills() {
     const [skills, setSkills] = useState([]);
+    const [isError, setIsError] = useState(false);
+    const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
         async function loadSkills() {
@@ -15,10 +18,29 @@ function Skills() {
                 const response = await fetch('/data/skills.json');
                 const data = await response.json();
                 setSkills(data);
-            } catch {}
+            } catch {
+                setIsError(true);
+            }
+            setIsLoading(false);
         }
         loadSkills();
     }, []);
+    if (isError) {
+        return (
+            <section id="skills" className="skills">
+                <h2 className="skills__title">Compétences</h2>
+                <p>Erreur de chargement</p>
+            </section>
+        );
+    } else if (isLoading) {
+        return (
+            <section id="skills" className="skills">
+                <h2 className="skills__title">Compétences</h2>
+                <Loader />
+            </section>
+        );
+    }
+
     return (
         <section id="skills" className="skills">
             <h2 className="skills__title">Compétences</h2>
