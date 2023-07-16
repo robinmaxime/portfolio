@@ -39,7 +39,7 @@ function Header() {
             setMenuItemSelected(blocks[blocks.length - 1]);
         } else {
             // Récupère la hauteur du Header
-            const offset = document.querySelector('.header').offsetHeight;
+            const offset = document.querySelector('.header').offsetHeight + 5;
             // Récupère la position des différents blocks dans la page
             const positions = blocks.map((block, index) => {
                 const blockElem = document.getElementById(block);
