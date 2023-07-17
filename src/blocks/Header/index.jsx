@@ -29,8 +29,8 @@ function Header() {
 
     // Détermine le block affiché à l'écran
     function changeMenuApperance() {
-        // récupère la position du scroll
-        const windowHeight = window.scrollY;
+        // récupère la position du scroll avec un minimum de 0
+        const windowHeight = Math.max(window.scrollY, 0);
         if (
             // test si on est en bas de la fenêtre
             window.innerHeight + Math.ceil(windowHeight) >=
