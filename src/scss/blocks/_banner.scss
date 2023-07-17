@@ -5,6 +5,7 @@
     min-height: 340px;
     height: 50vh;
     max-height: 500px;
+    overflow: hidden;
 
     &__container {
         display: flex;
@@ -15,6 +16,7 @@
         padding-left: 60px;
         width: 60%;
         margin-bottom: 60px;
+        animation: moveLeft 0.5s forwards;
     }
 
     &__welcome {
@@ -39,6 +41,26 @@
 
         & img {
             width: 100%;
+            transform: translateX(2000px);
+            animation: moveRight 0.5s 0.2s forwards;
         }
+    }
+}
+
+@keyframes moveRight {
+    0% {
+        transform: translateX(2000px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes moveLeft {
+    0% {
+        transform: translateX(-2000px);
+    }
+    100% {
+        transform: translateX(0px);
     }
 }

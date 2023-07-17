@@ -14,14 +14,16 @@ function Modal({ children, isOpen, handleClose }) {
             className={`modal ${isOpen ? '' : 'modal--hidden'}`}
             onClick={() => handleClose()}
         >
-            <div
-                className="modal__content"
-                onClick={(e) => e.stopPropagation()}
-            >
-                <div className="modal__close" onClick={() => handleClose()}>
-                    <FontAwesomeIcon icon={faXmark} />
+            <div className="modal__background">
+                <div
+                    className="modal__content"
+                    onClick={(e) => e.stopPropagation()}
+                >
+                    <div className="modal__close" onClick={() => handleClose()}>
+                        <FontAwesomeIcon icon={faXmark} />
+                    </div>
+                    <div className="modal__children">{children}</div>
                 </div>
-                <div className="modal__children">{children}</div>
             </div>
         </div>
     );

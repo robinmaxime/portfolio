@@ -36,5 +36,9 @@
         & img {
             width: 40px;
         }
+
+        & img:hover {
+            filter: contrast(50%);
+        }
     }
 }
