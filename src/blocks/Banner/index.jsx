@@ -1,6 +1,7 @@
 import Button from '../../components/Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
+import smoothScroll from '../../helpers';
 
 /**
  * Composant affichant la section "Banner"
@@ -17,8 +18,8 @@ function Banner() {
                     </h1>
                     <Button
                         title="Mes projets"
-                        url="#projects"
                         icon={<FontAwesomeIcon icon={faArrowDown} />}
+                        onClick={(e) => smoothScroll(e, 'projects')}
                     />
                 </div>
                 <div className="banner__image">

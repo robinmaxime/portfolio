@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import Button from '../../components/Button';
+import smoothScroll from '../../helpers';
 
 /**
  * Composant affichant le Header
@@ -73,22 +74,11 @@ function Header() {
         window.addEventListener('scroll', handleScroll);
     }, []);
 
-    // Gère le scroll vers l'élément passé en paramètre
-    function handleClick(e, idBlock) {
-        e.preventDefault();
-        const block = document.getElementById(idBlock);
-        if (block) {
-            const headerHeight = document.querySelector('.header').offsetHeight;
-            const newPosition = block.offsetTop - headerHeight;
-            window.scroll({ top: newPosition, behavior: 'smooth' });
-        }
-    }
-
     return (
         <header className={`header ${stickyClass}`}>
             <div className="header__container container">
                 <img
-                    onClick={(e) => handleClick(e, 'banner')}
+                    onClick={(e) => smoothScroll(e, 'banner')}
                     className="header__logo"
                     src="/assets/logo.png"
                     alt="logo de Maxime ROBIN"
@@ -102,7 +92,7 @@ function Header() {
                                 ? 'active'
                                 : 'inactive'
                         }
-                        onClick={(e) => handleClick(e, 'banner')}
+                        onClick={(e) => smoothScroll(e, 'banner')}
                     >
                         Accueil
                     </a>
@@ -113,7 +103,7 @@ function Header() {
                                 ? 'active'
                                 : 'inactive'
                         }
-                        onClick={(e) => handleClick(e, 'presentation')}
+                        onClick={(e) => smoothScroll(e, 'presentation')}
                     >
                         Présentation
                     </a>
@@ -124,7 +114,7 @@ function Header() {
                                 ? 'active'
                                 : 'inactive'
                         }
-                        onClick={(e) => handleClick(e, 'skills')}
+                        onClick={(e) => smoothScroll(e, 'skills')}
                     >
                         Compétences
                     </a>
@@ -135,7 +125,7 @@ function Header() {
                                 ? 'active'
                                 : 'inactive'
                         }
-                        onClick={(e) => handleClick(e, 'projects')}
+                        onClick={(e) => smoothScroll(e, 'projects')}
                     >
                         Projets
                     </a>
@@ -145,7 +135,7 @@ function Header() {
                         variant={
                             menuItemSelected === 'contact' ? null : 'bordered'
                         }
-                        onClick={(e) => handleClick(e, 'contact')}
+                        onClick={(e) => smoothScroll(e, 'contact')}
                     />
                 </nav>
             </div>
