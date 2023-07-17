@@ -17,7 +17,7 @@ function Presentation() {
                     <h2 className="presentation__title">Présentation</h2>
                     <p>
                         Bonjour, moi c'est Maxime ROBIN,{' '}
-                        <strong>développeur web junior</strong>! Passionné par
+                        <strong>développeur web junior</strong> ! Passionné par
                         les nouvelles technologies, j'ai découvert le code il y
                         a quelques temps et ai tout de suite accroché. J'ai donc
                         décidé de me reconvertir en tant que développeur web en
@@ -31,7 +31,10 @@ function Presentation() {
                             icon={<FontAwesomeIcon icon={faFilePdf} />}
                         />
 
-                        <a href="https://www.linkedin.com/in/maxime-robin-5a089a219">
+                        <a
+                            href="https://www.linkedin.com/in/maxime-robin-5a089a219"
+                            target="__blank"
+                        >
                             <img
                                 src="/../../assets/icons/linkedin.png"
                                 alt="logo de linkedIn"

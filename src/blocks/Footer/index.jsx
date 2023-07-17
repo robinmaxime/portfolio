@@ -10,13 +10,16 @@ function Footer() {
     return (
         <footer className="footer">
             <div className="footer__logos">
-                <a href="https://github.com/robinmaxime">
+                <a href="https://github.com/robinmaxime" target="__blank">
                     <img
                         src="/../../assets/icons/github.png"
                         alt="logo github"
                     />
                 </a>
-                <a href="https://www.linkedin.com/in/maxime-robin-5a089a219">
+                <a
+                    href="https://www.linkedin.com/in/maxime-robin-5a089a219"
+                    target="__blank"
+                >
                     <img src="/../../assets/icons/in.png" alt="logo linkedIn" />
                 </a>
             </div>
