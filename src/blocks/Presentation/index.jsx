@@ -44,7 +44,17 @@ function Presentation() {
                     </div>
                 </div>
                 <div className="presentation__image">
-                    <img src="/assets/portrait.jpg" alt="Maxime ROBIN" />
+                    <picture>
+                        <source
+                            srcSet="/assets/portrait.webp"
+                            type="image/webp"
+                        />
+                        <img
+                            className="card__image"
+                            src="/assets/portrait.jpg"
+                            alt="Maxime ROBIN"
+                        />
+                    </picture>
                 </div>
             </div>
             <Tabs>

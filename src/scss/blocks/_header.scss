@@ -51,6 +51,7 @@
                 position: absolute;
                 top: 15px;
                 right: 15px;
+                font-size: 28px;
             }
         }
 
@@ -81,7 +82,7 @@
         & a.active {
             border-bottom: 3px solid $accentColor;
 
-            @include respond(mobile) {
+            @include navRespond(mobile) {
                 border-bottom: 3px solid transparent;
             }
         }
@@ -100,7 +101,7 @@
         & a.inactive:hover {
             border-bottom-color: lighten($accentColor, 35%);
 
-            @include respond(mobile) {
+            @include navRespond(mobile) {
                 border-bottom-color: transparent;
             }
         }
