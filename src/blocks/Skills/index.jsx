@@ -55,7 +55,7 @@ function Skills() {
                     dynamicHeight={false}
                 >
                     {skills.map((skillGroup, index) => (
-                        <div key={`slide-${index}`}>
+                        <div key={`slide-${index}`} className="slide__carousel">
                             <div className="slide__container">
                                 <h3 className="slide__title">
                                     {skillGroup.title}

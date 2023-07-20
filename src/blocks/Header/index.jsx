@@ -1,6 +1,9 @@
 import { useState, useEffect } from 'react';
 import Button from '../../components/Button';
 import smoothScroll from '../../helpers';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { faXmark } from '@fortawesome/free-solid-svg-icons';
 
 /**
  * Composant affichant le Header
@@ -9,10 +12,11 @@ import smoothScroll from '../../helpers';
 function Header() {
     const [stickyClass, setStickyClass] = useState('');
     const [menuItemSelected, setMenuItemSelected] = useState('banner');
+    const [burgerIsOpen, setBurgerIsOpen] = useState(false);
 
     const blocks = ['banner', 'presentation', 'skills', 'projects', 'contact'];
 
-    //
+    // Évènement au scroll : change l'apparance du header et change l'apparance du menu
     function handleScroll() {
         changeHeaderApperance();
         changeMenuApperance();
@@ -30,10 +34,10 @@ function Header() {
     // Détermine le block affiché à l'écran
     function changeMenuApperance() {
         // récupère la position du scroll avec un minimum de 0
-        const windowHeight = Math.max(window.scrollY, 0);
+        const scrollPosition = Math.max(window.scrollY, 0);
         if (
             // test si on est en bas de la fenêtre
-            window.innerHeight + Math.ceil(windowHeight) >=
+            window.innerHeight + Math.ceil(scrollPosition) >=
             document.body.offsetHeight
         ) {
             // Force le dernier block à être actif
@@ -50,8 +54,8 @@ function Header() {
                 }
                 // Récupère la position haute et basse du block
                 const rect = blockElem.getBoundingClientRect();
-                const top = rect.top + windowHeight - offset;
-                const bottom = rect.bottom + windowHeight - offset;
+                const top = rect.top + scrollPosition - offset;
+                const bottom = rect.bottom + scrollPosition - offset;
                 return {
                     blockId: block,
                     top: index === 0 ? 0 : top,
@@ -61,8 +65,8 @@ function Header() {
             // Cherche un block qui correspond au critère
             const eligible = positions.find((position) => {
                 return (
-                    windowHeight >= position.top &&
-                    windowHeight < position.bottom
+                    scrollPosition >= position.top &&
+                    scrollPosition < position.bottom
                 );
             });
             setMenuItemSelected(eligible?.blockId || '');
@@ -84,7 +88,19 @@ function Header() {
                     alt="logo de Maxime ROBIN"
                 />
 
-                <nav className="header__nav">
+                <nav
+                    className={`header__nav ${
+                        burgerIsOpen
+                            ? 'header__nav--opened'
+                            : 'header__nav--closed'
+                    }`}
+                >
+                    <button onClick={() => setBurgerIsOpen(!burgerIsOpen)}>
+                        <FontAwesomeIcon
+                            icon={faXmark}
+                            className="close__button"
+                        />
+                    </button>
                     <a
                         href="#banner"
                         className={
@@ -92,7 +108,10 @@ function Header() {
                                 ? 'active'
                                 : 'inactive'
                         }
-                        onClick={(e) => smoothScroll(e, 'banner')}
+                        onClick={(e) => {
+                            setBurgerIsOpen(false);
+                            smoothScroll(e, 'banner');
+                        }}
                     >
                         Accueil
                     </a>
@@ -103,7 +122,10 @@ function Header() {
                                 ? 'active'
                                 : 'inactive'
                         }
-                        onClick={(e) => smoothScroll(e, 'presentation')}
+                        onClick={(e) => {
+                            setBurgerIsOpen(false);
+                            smoothScroll(e, 'presentation');
+                        }}
                     >
                         Présentation
                     </a>
@@ -114,7 +136,10 @@ function Header() {
                                 ? 'active'
                                 : 'inactive'
                         }
-                        onClick={(e) => smoothScroll(e, 'skills')}
+                        onClick={(e) => {
+                            setBurgerIsOpen(false);
+                            smoothScroll(e, 'skills');
+                        }}
                     >
                         Compétences
                     </a>
@@ -125,7 +150,10 @@ function Header() {
                                 ? 'active'
                                 : 'inactive'
                         }
-                        onClick={(e) => smoothScroll(e, 'projects')}
+                        onClick={(e) => {
+                            setBurgerIsOpen(false);
+                            smoothScroll(e, 'projects');
+                        }}
                     >
                         Projets
                     </a>
@@ -135,8 +163,19 @@ function Header() {
                         variant={
                             menuItemSelected === 'contact' ? null : 'bordered'
                         }
-                        onClick={(e) => smoothScroll(e, 'contact')}
+                        onClick={(e) => {
+                            setBurgerIsOpen(false);
+                            smoothScroll(e, 'contact');
+                        }}
                     />
+                </nav>
+                <nav className="header__nav--mobile">
+                    <button onClick={() => setBurgerIsOpen(!burgerIsOpen)}>
+                        <FontAwesomeIcon
+                            icon={faBars}
+                            className="header__burger"
+                        />
+                    </button>
                 </nav>
             </div>
         </header>

@@ -2,10 +2,21 @@
     padding-top: 100px;
     padding-bottom: 30px;
 
+    @include respond(mobile) {
+        padding-top: 50px;
+    }
+
+    & .slide__carousel {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
     &__title {
         text-align: center;
         margin-bottom: 20px;
     }
+
     & p {
         text-align: center;
     }
@@ -15,8 +26,19 @@
     }
 
     & .slide__container {
+        display: flex;
+        flex-direction: column;
         background-color: $secondaryBackgroundColor;
         padding: 50px 40px 70px 40px;
+
+        @include respond(tablet) {
+            padding: 50px 20px 70px 20px;
+        }
+
+        @include respond(mobile) {
+            padding: 10px 10px 50px 10px;
+            flex-grow: 1;
+        }
     }
 
     & .slide__title {
@@ -25,6 +47,12 @@
         font-weight: 600;
         text-transform: uppercase;
         padding-bottom: 20px;
+
+        @include respond(mobile) {
+            font-size: calc(16px + 1vw);
+            padding-bottom: 0;
+            margin-bottom: 10px;
+        }
     }
 
     & .slide__skillGroup {
@@ -33,12 +61,32 @@
         grid-auto-flow: column;
         margin: 0 10%;
         gap: 25px;
+        align-items: center;
+        flex-grow: 1;
+
+        @include respond(tablet) {
+            gap: 0;
+        }
+
+        @include respond(mobile) {
+            grid-auto-columns: unset;
+            grid-auto-flow: unset;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
     }
 
     & .carousel .slide img {
         filter: saturate(80%);
-
         width: 8vw;
+
+        @include respond(tablet) {
+            width: 10vw;
+        }
+
+        @include respond(mobile) {
+            width: 15vw;
+        }
     }
 
     // OVERIDE Carousel component - BEGIN

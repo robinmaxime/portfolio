@@ -12,23 +12,78 @@
     &__container {
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
 
     &__logo {
         width: 64px;
+        height: 64px;
         cursor: pointer;
+
+        @include respond(mobile) {
+            width: calc(32px + 0.5vw);
+            height: calc(32px + 0.5vw);
+        }
     }
 
     &__nav {
         display: flex;
         gap: 40px;
         align-items: center;
+
+        &--opened {
+            @include navRespond(mobile) {
+                display: flex;
+            }
+        }
+
+        &--closed {
+            @include navRespond(mobile) {
+                display: none;
+            }
+        }
+
+        & .close__button {
+            display: none;
+
+            @include navRespond(mobile) {
+                display: unset;
+                position: absolute;
+                top: 15px;
+                right: 15px;
+            }
+        }
+
+        @include navRespond(tablet) {
+            gap: 15px;
+        }
+
+        @include navRespond(mobile) {
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            height: 100vh;
+            padding-top: 50px;
+            gap: 5px;
+            background-color: $primaryBackgroundColor;
+            flex-direction: column;
+        }
+
         & a {
             font-weight: 800;
+
+            @include navRespond(tablet) {
+                font-size: calc(12px + 0.5vw);
+            }
         }
 
         & a.active {
             border-bottom: 3px solid $accentColor;
+
+            @include respond(mobile) {
+                border-bottom: 3px solid transparent;
+            }
         }
 
         & a.inactive {
@@ -44,6 +99,22 @@
 
         & a.inactive:hover {
             border-bottom-color: lighten($accentColor, 35%);
+
+            @include respond(mobile) {
+                border-bottom-color: transparent;
+            }
+        }
+    }
+    &__nav--mobile {
+        display: none;
+
+        @include navRespond(mobile) {
+            display: unset;
+        }
+
+        & .header__burger {
+            color: $accentColor;
+            font-size: 28px;
         }
     }
 }

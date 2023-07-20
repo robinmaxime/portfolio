@@ -1,6 +1,6 @@
 import { useContext, useState } from 'react';
-import Filter from '../../components/Filter';
 import { ProjectsContext } from '../../contexts/projects_context';
+import Filter from '../../components/Filter';
 import Card from '../../components/Card';
 import Loader from '../../components/Loader';
 

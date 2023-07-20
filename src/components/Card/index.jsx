@@ -89,7 +89,7 @@ function Card({ projectId }) {
                             <p>{project.challenge}</p>
                         </div>
                     </div>
-                    <div>
+                    <div className="card-modal__right-colon">
                         {project.link ? (
                             <a
                                 className="card-modal__link button"

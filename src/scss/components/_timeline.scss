@@ -5,6 +5,11 @@
     grid-auto-flow: column;
     gap: 5%;
 
+    @include respond(mobile) {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
     &__line {
         background-color: rgb(201, 201, 201);
         height: 8px;
@@ -13,6 +18,10 @@
         left: 0;
         right: 0;
         z-index: -1;
+
+        @include respond(mobile) {
+            display: none;
+        }
     }
 
     &__item {
@@ -20,6 +29,11 @@
         align-items: center;
         flex-direction: column;
         justify-content: flex-end;
+
+        @include respond(mobile) {
+            border-bottom: 3px solid $secondaryBackgroundColor;
+            padding: 20px;
+        }
     }
 
     &__title,
@@ -34,16 +48,42 @@
         font-size: 30px;
         font-weight: 700;
         height: 70px;
+
+        @include respond(tablet) {
+            font-size: calc(20px + 0.6vw);
+        }
+
+        @include respond(mobile) {
+            height: auto;
+            font-size: calc(18px + 0.06vw);
+            margin-bottom: 10px;
+        }
     }
 
     &__subtitle {
         font-size: 21px;
         font-weight: 700;
         color: $accentColor;
+
+        @include respond(tablet) {
+            font-size: calc(15px + 0.6vw);
+        }
+
+        @include respond(mobile) {
+            font-size: calc(14px + 0.06vw);
+            font-weight: 800;
+        }
     }
 
     &__content {
         font-weight: 600;
+
+        @include respond(tablet) {
+            font-size: calc(10px + 0.8vw);
+        }
+        @include respond(mobile) {
+            font-size: calc(10px + 0.8vw);
+        }
     }
 
     &__dot {
@@ -52,5 +92,9 @@
         width: 30px;
         height: 30px;
         margin-top: 30px;
+
+        @include respond(mobile) {
+            display: none;
+        }
     }
 }

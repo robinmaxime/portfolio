@@ -1,11 +1,18 @@
 .tags {
     display: flex;
     gap: 10px;
+
+    @include respond(mobile) {
+        gap: 2px;
+    }
+
     &__item {
         text-align: center;
+
         & img {
             width: 64px;
         }
+
         & span {
             font-size: 16px;
             border: 2px solid $primaryTextColor;

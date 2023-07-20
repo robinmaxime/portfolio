@@ -8,6 +8,7 @@ input {
 button {
     border: none;
     background: none;
+    cursor: pointer;
 }
 
 body,
@@ -36,6 +37,12 @@ a {
 h2 {
     font-size: 50px;
     font-weight: 800;
+    @include respond(tablet) {
+        font-size: calc(40px + 0.4vw);
+    }
+    @include respond(mobile) {
+        font-size: calc(30px + 0.4vw);
+    }
 }
 
 strong {
@@ -46,6 +53,9 @@ strong {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 50px;
+    @include respond(mobile) {
+        padding: 0 15px;
+    }
 }
 
 .hidden {

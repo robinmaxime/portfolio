@@ -21,6 +21,10 @@
         font-size: 20px;
         cursor: pointer;
 
+        @include respond(mobile) {
+            font-size: calc(16px + 0.3vw);
+        }
+
         &--selected {
             background: #fff;
             border-color: #aaa;
@@ -52,6 +56,14 @@
         display: none;
         padding: 50px 80px;
         min-height: 250px;
+
+        @include respond(tablet) {
+            padding: 20px 20px;
+        }
+
+        @include respond(mobile) {
+            padding: 20px 0 0 0;
+        }
 
         &--selected {
             display: block;

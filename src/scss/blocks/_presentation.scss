@@ -1,19 +1,51 @@
 .presentation {
     padding-top: 100px;
+
+    @include respond(mobile) {
+        padding-top: 50px;
+    }
+
     &__main {
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
         gap: 7%;
         margin-bottom: 50px;
+
+        @include respond(tablet) {
+            gap: 50px;
+            flex-direction: column;
+        }
+
+        @include respond(mobile) {
+            gap: 50px;
+            flex-direction: column;
+        }
     }
 
     &__text {
         flex-shrink: 0;
         width: 66%;
         text-align: justify;
+
+        @include respond(tablet) {
+            width: 100%;
+        }
+
+        @include respond(mobile) {
+            width: 100%;
+        }
+
         & p {
             margin-bottom: 50px;
+
+            @include respond(tablet) {
+                font-size: calc(14px + 0.4vw);
+            }
+
+            @include respond(mobile) {
+                font-size: calc(14px + 0.4vw);
+            }
         }
     }
 
@@ -25,6 +57,12 @@
         display: flex;
         justify-content: space-evenly;
         align-items: center;
+
+        @include respond(mobile) {
+            flex-direction: column;
+            gap: 15px;
+        }
+
         & a {
             display: flex;
             align-items: center;
@@ -33,10 +71,19 @@
 
     &__image {
         flex-shrink: 1;
+
         & img {
             width: 100%;
             border-radius: 50%;
             box-shadow: 0 0 16px $shadowColor;
+
+            @include respond(tablet) {
+                width: 300px;
+            }
+
+            @include respond(mobile) {
+                width: 250px;
+            }
         }
     }
 }

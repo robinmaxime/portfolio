@@ -4,15 +4,23 @@
     align-items: center;
     padding-top: 100px;
     margin-bottom: 100px;
+
+    @include respond(mobile) {
+        padding-top: 50px;
+        margin-bottom: 50px;
+    }
+
     &__title {
         text-align: center;
         margin-bottom: 20px;
     }
+
     &__message {
         border: 1px solid rgb(124, 165, 124);
         background-color: rgb(231, 239, 231);
         border-radius: 15px;
         padding: 50px 50px;
+
         &--error {
             border-color: rgb(228, 136, 136);
             background-color: rgb(236, 201, 201);
@@ -23,6 +31,15 @@
         display: flex;
         flex-direction: column;
         width: 650px;
+
+        @include respond(tablet) {
+            width: 80%;
+        }
+
+        @include respond(mobile) {
+            width: 80%;
+        }
+
         & input,
         & textarea {
             border: 1px solid rgb(193, 193, 193);
@@ -31,22 +48,22 @@
             padding: 10px 15px;
             font-size: 20px;
         }
+
         & input::placeholder,
         textarea::placeholder {
             color: rgb(157, 157, 157);
         }
+
         & input:focus,
         & textarea:focus {
             outline: none;
         }
+
         & .form__send {
             display: grid;
             grid-template-columns: 1fr min-content 1fr;
             justify-items: left;
             gap: 25px;
         }
-    }
-    & button {
-        cursor: pointer;
     }
 }

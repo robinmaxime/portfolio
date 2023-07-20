@@ -1,7 +1,7 @@
 import Button from '../../components/Button';
+import smoothScroll from '../../helpers';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
-import smoothScroll from '../../helpers';
 
 /**
  * Composant affichant la section "Banner"

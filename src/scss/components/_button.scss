@@ -11,6 +11,10 @@
     border: 2.5px solid $accentColor;
     cursor: pointer;
 
+    @include respond(mobile) {
+        font-size: calc(14px + 1vw);
+    }
+
     &[disabled] {
         background-color: darkgrey;
     }
