@@ -25,12 +25,12 @@
                 {
                     "url": "/assets/projects/booki400w.webp",
                     "type": "webp",
-                    "media": "(max-width: 500px)"
+                    "media": "(max-width: 600px)"
                 },
                 {
                     "url": "/assets/projects/booki700w.webp",
                     "type": "webp",
-                    "media": "(min-width: 501px) and (max-width: 900px)"
+                    "media": "(min-width: 601px) and (max-width: 900px)"
                 },
                 { "url": "/assets/projects/booki1000w.webp", "type": "webp" },
                 { "url": "/assets/projects/booki1000w.jpg", "fallback": true }
@@ -51,12 +51,12 @@
                 {
                     "url": "/assets/projects/sophiebluel400w.webp",
                     "type": "webp",
-                    "media": "(max-width: 500px)"
+                    "media": "(max-width: 600px)"
                 },
                 {
                     "url": "/assets/projects/sophiebluel700w.webp",
                     "type": "webp",
-                    "media": "(min-width: 501px) and (max-width: 900px)"
+                    "media": "(min-width: 601px) and (max-width: 900px)"
                 },
                 {
                     "url": "/assets/projects/sophiebluel1000w.webp",
@@ -83,12 +83,12 @@
                 {
                     "url": "/assets/projects/menumaker400w.webp",
                     "type": "webp",
-                    "media": "(max-width: 500px)"
+                    "media": "(max-width: 600px)"
                 },
                 {
                     "url": "/assets/projects/menumaker700w.webp",
                     "type": "webp",
-                    "media": "(min-width: 501px) and (max-width: 900px)"
+                    "media": "(min-width: 601px) and (max-width: 900px)"
                 },
                 {
                     "url": "/assets/projects/menumaker1000w.webp",
@@ -113,12 +113,12 @@
                 {
                     "url": "/assets/projects/ninacarducci400w.webp",
                     "type": "webp",
-                    "media": "(max-width: 500px)"
+                    "media": "(max-width: 600px)"
                 },
                 {
                     "url": "/assets/projects/ninacarducci700w.webp",
                     "type": "webp",
-                    "media": "(min-width: 501px) and (max-width: 900px)"
+                    "media": "(min-width: 601px) and (max-width: 900px)"
                 },
                 {
                     "url": "/assets/projects/ninacarducci1000w.webp",
@@ -145,12 +145,12 @@
                 {
                     "url": "/assets/projects/kasa400w.webp",
                     "type": "webp",
-                    "media": "(max-width: 500px)"
+                    "media": "(max-width: 600px)"
                 },
                 {
                     "url": "/assets/projects/kasa700w.webp",
                     "type": "webp",
-                    "media": "(min-width: 501px) and (max-width: 900px)"
+                    "media": "(min-width: 601px) and (max-width: 900px)"
                 },
                 { "url": "/assets/projects/kasa1000w.webp", "type": "webp" },
                 { "url": "/assets/projects/kasa1000w.jpg", "fallback": true }
@@ -171,12 +171,12 @@
                 {
                     "url": "/assets/projects/monvieuxgrimoire400w.webp",
                     "type": "webp",
-                    "media": "(max-width: 500px)"
+                    "media": "(max-width: 600px)"
                 },
                 {
                     "url": "/assets/projects/monvieuxgrimoire700w.webp",
                     "type": "webp",
-                    "media": "(min-width: 501px) and (max-width: 900px)"
+                    "media": "(min-width: 601px) and (max-width: 900px)"
                 },
                 {
                     "url": "/assets/projects/monvieuxgrimoire1000w.webp",
