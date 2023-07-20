@@ -95,7 +95,10 @@ function Header() {
                             : 'header__nav--closed'
                     }`}
                 >
-                    <button onClick={() => setBurgerIsOpen(!burgerIsOpen)}>
+                    <button
+                        onClick={() => setBurgerIsOpen(!burgerIsOpen)}
+                        aria-label="close menu button"
+                    >
                         <FontAwesomeIcon
                             icon={faXmark}
                             className="close__button"
@@ -170,7 +173,10 @@ function Header() {
                     />
                 </nav>
                 <nav className="header__nav--mobile">
-                    <button onClick={() => setBurgerIsOpen(!burgerIsOpen)}>
+                    <button
+                        onClick={() => setBurgerIsOpen(!burgerIsOpen)}
+                        aria-label="open menu boutton"
+                    >
                         <FontAwesomeIcon
                             icon={faBars}
                             className="header__burger"

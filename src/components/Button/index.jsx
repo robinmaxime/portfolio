@@ -7,14 +7,16 @@ import PropTypes from 'prop-types';
  * @param {string} url  destination du lien : optionnel
  * @param {string} icon  nom de l'icone : optionnel
  * @param {func} onClick fonction à éxecuter au click sur le boutton
+ * @param {string} target cible du lien : optionnel
  * @returns JSX.element
  */
-function Button({ title, variant, url, icon, onClick }) {
+function Button({ title, variant, url, icon, onClick, target }) {
     return (
         <a
             href={url}
             className={`button ${variant ? 'button--' + variant : ''}`}
             onClick={onClick}
+            target={target}
         >
             {icon}
             {title}
@@ -27,6 +29,7 @@ Button.propTypes = {
     variant: PropTypes.string,
     url: PropTypes.string,
     icon: PropTypes.object,
+    target: PropTypes.string,
 };
 
 export default Button;

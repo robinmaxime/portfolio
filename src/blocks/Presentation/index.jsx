@@ -26,6 +26,7 @@ function Presentation() {
                     </p>
                     <div className="presentation__links">
                         <Button
+                            target="_blank"
                             title="Télécharger mon CV"
                             url="/assets/cv_maxime_robin.pdf"
                             icon={<FontAwesomeIcon icon={faFilePdf} />}
