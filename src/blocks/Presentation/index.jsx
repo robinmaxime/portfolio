@@ -27,7 +27,7 @@ function Presentation() {
                     <div className="presentation__links">
                         <Button
                             title="Télécharger mon CV"
-                            url="/assets/cv.pdf"
+                            url="/assets/cv_maxime_robin.pdf"
                             icon={<FontAwesomeIcon icon={faFilePdf} />}
                         />
 
