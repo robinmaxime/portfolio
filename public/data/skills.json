@@ -8,6 +8,7 @@
             },
             { "icon": "/assets/icons/css.png", "label": "css" },
             { "icon": "/assets/icons/sass.png", "label": "sass" },
+            { "icon": "/assets/icons/bootstrap.png", "label": "bootstrap" },
             { "icon": "/assets/icons/javascript.png", "label": "javascript" },
             { "icon": "/assets/icons/react.png", "label": "react" }
         ]
@@ -21,7 +22,8 @@
             },
             { "icon": "/assets/icons/express.png", "label": "express" },
             { "icon": "/assets/icons/mongodb.png", "label": "mongodb" },
-            { "icon": "/assets/icons/mongoose.png", "label": "mongoose" }
+            { "icon": "/assets/icons/mongoose.png", "label": "mongoose" },
+            { "icon": "/assets/icons/mariadb.png", "label": "mariadb" }
         ]
     },
     {
