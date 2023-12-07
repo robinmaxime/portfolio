@@ -20,7 +20,7 @@
             "description": "Location d'appartement entre particuliers",
             "context": "L'entreprise Booki souhaite développer un site internet qui permette aux usagers de trouver des hébergements et des activités dans la ville de leur choix. J'ai été chargé d'intégrer l'interface du site avec du code HTML et CSS.",
             "challenge": "Dans ce projet il a fallu respecter les spécifications et contraintes techniques regroupées dans la note de synthèse qui nous était fournie ainsi que la maquette. Il a fallu notamment que les cartes 'hébergement' soit cliquables dans leur entièreté, le site devait être responsive avec 3 breakpoint donnés et le code devait être passé aux validateurs W3C.",
-            "categoryId": 1,
+            "categoryId": [1],
             "images": [
                 {
                     "url": "/assets/projects/booki400w.webp",
@@ -35,7 +35,8 @@
                 { "url": "/assets/projects/booki1000w.webp", "type": "webp" },
                 { "url": "/assets/projects/booki1000w.jpg", "fallback": true }
             ],
-            "link": "https://github.com/robinmaxime/OCProject2.git",
+            "github": "https://github.com/robinmaxime/OCProject2.git",
+            "link": "https://robinmaxime.github.io/OCProject2/",
             "technologies": ["html", "css"],
             "year": 2023,
             "education": true
@@ -46,7 +47,7 @@
             "description": "Portfolio de Sophie Bluel, architecte intérieur",
             "context": "Notre cliente, Sophie Bluel, souhaite que nous lui developpions un portfolio avec ses différents projets d'architecte. J'ai été chargé de développer la partie front-end en Javascript.",
             "challenge": "Dans ce projet, il a fallu que je développe les fonctions de la page de présentation, la page de connexion de l'administrateur du site et la modale permettant d'uploader de nouveau médias. Il a fallu faire en sorte que le site se mette à jour sans qu'il n'y ait de rafraichissement de la page en manipulant le DOM.",
-            "categoryId": 1,
+            "categoryId": [1],
             "images": [
                 {
                     "url": "/assets/projects/sophiebluel400w.webp",
@@ -67,7 +68,8 @@
                     "fallback": true
                 }
             ],
-            "link": "https://github.com/robinmaxime/Portfolio-architecte-sophie-bluel-master.git",
+            "github": "https://github.com/robinmaxime/Portfolio-architecte-sophie-bluel-master.git",
+            "link": "https://robinmaxime.github.io/Portfolio-architecte-sophie-bluel-master/FrontEnd/",
             "technologies": ["html", "css", "javascript"],
             "year": 2023,
             "education": true
@@ -78,7 +80,7 @@
             "description": "Planifier le développement du site Menu Maker By Qwenta",
             "context": "Notre client Qwenta souhaite faire développer un 'Menu Maker', site permettant aux restaurateurs d'afficher et de mettre  en page leurs menus facilement. J'ai été chargé de préparer et planifier le projet.",
             "challenge": "Dans ce projet en AGILE, il a fallu commencer par développer un système de veille qui pourrait être réutilisé par l'équipe. Dans un second temps, il a fallu remplir les spécifications techniques du projet en justifiant mes choix. Enfin, j'ai dû faire la planification du projet via un logiciel (Notion) à travers des KANBAN et un diagramme de GANTT et présenter tout cela au client.",
-            "categoryId": 4,
+            "categoryId": [4],
             "images": [
                 {
                     "url": "/assets/projects/menumaker400w.webp",
@@ -108,7 +110,7 @@
             "description": "Optimisation du site d'une photographe : Nina Carducci",
             "context": "Nina Carducci possède un portfolio comprenant beaucoup d'images. Son site n'est pas bien optimisé et quelques bugs sont présents. Après audit, je lui propose d'optimiser les images, le code et sa structure de son site et de corriger les bugs. ",
             "challenge": "Dans ce projet, il a fallu faire un audit LightHouse avant/après pour voir d'où venaient les soucis d'optimisation. J'ai donc travaillé sur l'optimisation des images (taille, format, etc), sur la minification des fichiers JS et CSS et sur l'optimisation SEO (notamment des rich snippets). Il a également fallu travailler sur l'accessibilité en réorganisant le code et en respectant les règles de la WCAG. J'ai enfin corrigé les bugs présents dans le code Javascript.",
-            "categoryId": 1,
+            "categoryId": [1],
             "images": [
                 {
                     "url": "/assets/projects/ninacarducci400w.webp",
@@ -129,7 +131,8 @@
                     "fallback": true
                 }
             ],
-            "link": "https://github.com/robinmaxime/nina-carducci.github.io-master.git",
+            "github": "https://github.com/robinmaxime/nina-carducci.github.io-master.git",
+            "link": "https://robinmaxime.github.io/nina-carducci.github.io-master/",
             "technologies": ["html", "css", "javascript"],
             "year": 2023,
             "education": true
@@ -140,7 +143,7 @@
             "description": "Créez une application web de location immobilière avec React",
             "context": "Je suis recruté par Kasa, leader de la location d'appartements entre particulier, en tant que freelance pour développer sa nouvelle platforme web. Le site a été codé il y a plus 10 de ans en ASP.NET et j'ai été chargé de recoder le site en React.",
             "challenge": "Dans ce projet, il a fallu partir de la maquette fournie et coder depuis zéro le front-end avec React et React-Router. Parmi les défis à relever : créer différentes routes dans le router, créer des boites de texte ouvrables et fermables, créer un carroussel cyclique et enfin rediriger vers une page d'erreur en cas d'erreur d'URL. Tout le site devait être responsive.",
-            "categoryId": 1,
+            "categoryId": [1],
             "images": [
                 {
                     "url": "/assets/projects/kasa400w.webp",
@@ -155,7 +158,8 @@
                 { "url": "/assets/projects/kasa1000w.webp", "type": "webp" },
                 { "url": "/assets/projects/kasa1000w.jpg", "fallback": true }
             ],
-            "link": "https://github.com/robinmaxime/kasa.git",
+            "github": "https://github.com/robinmaxime/kasa.git",
+            "link": "https://kasa.maximerobindev.com",
             "technologies": ["html", "sass", "react"],
             "year": 2023,
             "education": true
@@ -166,7 +170,7 @@
             "description": "Développer le back-end d'une chaîne de librairies",
             "context": "La chaîne de librairies souhaite ouvrir un site de notation de livres qui permettra au membres d'ajouter un nouveau livre et de mettre une note visible par le public. J'ai été chargé de developper la partie back end du site en node.js.",
             "challenge": "Dans ce projet, il a fallu suivre le cahier des charges fourni. J'ai commencé par créer le serveur et le router grâce au framework Express et paramétrer le base de données MongoDB grâce à la bibliothèque Mongoose. J'ai créé différents middlewares pour l'authentification, la gestion des requêtes multipart et pour le retraitement des images (green code). Enfin grâce aux méthodes HTTP, j'ai créé différents controlleurs pour manipuler la base de données.",
-            "categoryId": 2,
+            "categoryId": [2],
             "images": [
                 {
                     "url": "/assets/projects/monvieuxgrimoire400w.webp",
@@ -187,10 +191,116 @@
                     "fallback": true
                 }
             ],
-            "link": "https://github.com/robinmaxime/Mon-vieux-grimoire.git",
+            "github": "https://github.com/robinmaxime/Mon-vieux-grimoire.git",
             "technologies": ["nodejs", "express", "mongodb", "mongoose"],
             "year": 2023,
             "education": true
+        },
+        {
+            "id": 7,
+            "title": "Mon portfolio",
+            "description": "Créer mon propre portfolio",
+            "context": "Afin de démontrer mes compétences acquises lors de ma formation, il a fallu que j'imagine et crée mon portfolio décrivant les projets effectués",
+            "challenge": "Dans ce projet, il a fallu que je développe en peu de temps mon portfolio depuis 0. J'ai donc conçu mon site avec une courte description, un carroussel (bibliothèque externe) exposant mes compétences ainsi que des cards cliquable ouvrant une modale exposant le projet réalisé. J'ai choisi de faire mon portfolio en React et en SCSS pour continuer à me former sur ces technologies. Les données sont stockés dans un fichier Json.",
+            "categoryId": [1],
+            "images": [
+                {
+                    "url": "/assets/projects/monportfolio400w.webp",
+                    "type": "webp",
+                    "media": "(max-width: 600px)"
+                },
+                {
+                    "url": "/assets/projects/monportfolio700w.webp",
+                    "type": "webp",
+                    "media": "(min-width: 601px) and (max-width: 900px)"
+                },
+                {
+                    "url": "/assets/projects/monportfolio1000w.webp",
+                    "type": "webp"
+                },
+                {
+                    "url": "/assets/projects/monportfolio1000w.jpg",
+                    "fallback": true
+                }
+            ],
+            "github": "https://github.com/robinmaxime/portfolio.git",
+            "link": "https://www.maximerobindev.com",
+            "technologies": ["html", "sass", "react"],
+            "year": 2023,
+            "education": true
+        },
+        {
+            "id": 8,
+            "title": "Ferme du Trèfle Blanc",
+            "description": "Site de réservation de produits fermier Bio et Locaux",
+            "context": "La ferme du Trèfle Blanc souhaitait un site web qui mette en avant tout leur produits et que les clients puissent passer des reservations directement depuis le site.",
+            "challenge": "Dans le cadre d'une collaboration, j'ai été amené à réaliser la maquette du site en lien avec les besoins du client, le code HTML, SASS et les principaux composants Réact. J'ai également collaboré à la mise en place du serveur Back End (Création de middleware avec Express, mise en place des tables avec Maria DB). Il y a eu plusieurs réunions au cours du développement avec le client pour répondre au mieux à ses besoins.",
+            "categoryId": [1, 2],
+            "images": [
+                {
+                    "url": "/assets/projects/fdtb400w.webp",
+                    "type": "webp",
+                    "media": "(max-width: 600px)"
+                },
+                {
+                    "url": "/assets/projects/fdtb700w.webp",
+                    "type": "webp",
+                    "media": "(min-width: 601px) and (max-width: 900px)"
+                },
+                {
+                    "url": "/assets/projects/fdtb1000w.webp",
+                    "type": "webp"
+                },
+                {
+                    "url": "/assets/projects/fdtb1000w.jpg",
+                    "fallback": true
+                }
+            ],
+            "link": "https://fdtb.maximerobindev.com",
+            "technologies": [
+                "html",
+                "sass",
+                "react",
+                "bootstrap",
+                "mariaDB",
+                "nodejs",
+                "express"
+            ],
+            "year": 2023,
+            "education": false
+        },
+        {
+            "id": 9,
+            "title": "Jardin.com",
+            "description": "Site de conseils et de présentation de plantes",
+            "context": "Projet fictif : le client souhaitait un site où il pouvait prodiguer des conseils pour différents types de plantes.",
+            "challenge": "Dans ce projet, j'ai commencé par créer la maquette et réaliser le site en sass et réact. Ce projet utilise un fichier Json pour stocker les différentes plantes et leur catégorie. J'ai mis en place un router grâce à 'React Router Dom' et j'ai pu m'exercer sur les animations des différentes cards notamment. Le site est optimisé (plus de 90% au lightHouse) et accessible (pas d'erreur au WCAG).",
+            "categoryId": [1],
+            "images": [
+                {
+                    "url": "/assets/projects/jardin400w.webp",
+                    "type": "webp",
+                    "media": "(max-width: 600px)"
+                },
+                {
+                    "url": "/assets/projects/jardin700w.webp",
+                    "type": "webp",
+                    "media": "(min-width: 601px) and (max-width: 900px)"
+                },
+                {
+                    "url": "/assets/projects/jardin1000w.webp",
+                    "type": "webp"
+                },
+                {
+                    "url": "/assets/projects/jardin1000w.jpg",
+                    "fallback": true
+                }
+            ],
+            "link": "https://jardin.maximerobindev.com",
+            "github": "https://github.com/robinmaxime/projet-jardin.git",
+            "technologies": ["html", "sass", "react"],
+            "year": 2023,
+            "education": false
         }
     ]
 }
