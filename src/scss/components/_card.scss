@@ -167,8 +167,15 @@
         }
     }
     &__context,
-    &__link {
+    &__links {
         margin-bottom: 25px;
+    }
+
+    &__links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
     }
 
     &__technologies .tags {

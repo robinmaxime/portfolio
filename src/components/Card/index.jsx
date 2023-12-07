@@ -90,17 +90,28 @@ function Card({ projectId }) {
                         </div>
                     </div>
                     <div className="card-modal__right-colon">
-                        {project.link ? (
-                            <a
-                                className="card-modal__link button"
-                                href={project.link}
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                Lien du projet
-                            </a>
-                        ) : null}
-
+                        <div className="card-modal__links">
+                            {project.github ? (
+                                <a
+                                    className="card-modal__link button"
+                                    href={project.github}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    Lien GitHub
+                                </a>
+                            ) : null}
+                            {project.link ? (
+                                <a
+                                    className="card-modal__link button"
+                                    href={project.link}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    Lien du site
+                                </a>
+                            ) : null}
+                        </div>
                         {project.technologies ? (
                             <div className="card-modal__technologies">
                                 <Tags
