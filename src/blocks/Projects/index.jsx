@@ -35,8 +35,10 @@ function Projects() {
         categoryId === 0
             ? projects
             : projects.filter((project) => {
-                  return project.categoryId === categoryId;
+                  return project.categoryId.includes(categoryId);
               });
+
+    filteredProjects.sort((a, b) => b.id - a.id);
 
     return (
         <section id="projects" className="projects">
