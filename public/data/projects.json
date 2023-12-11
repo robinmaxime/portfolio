@@ -19,7 +19,7 @@
             "title": "Booki",
             "description": "Location d'appartement entre particuliers",
             "context": "L'entreprise Booki souhaite développer un site internet qui permette aux usagers de trouver des hébergements et des activités dans la ville de leur choix. J'ai été chargé d'intégrer l'interface du site avec du code HTML et CSS.",
-            "challenge": "Dans ce projet il a fallu respecter les spécifications et contraintes techniques regroupées dans la note de synthèse qui nous était fournie ainsi que la maquette. Il a fallu notamment que les cartes 'hébergement' soit cliquables dans leur entièreté, le site devait être responsive avec 3 breakpoint donnés et le code devait être passé aux validateurs W3C.",
+            "challenge": "Dans ce projet il a fallu respecter les spécifications et contraintes techniques regroupées dans la note de synthèse qui nous était fournie ainsi que la maquette. Il a fallu notamment que les cartes 'hébergement' soit cliquables dans leur entièreté, le site devait être responsive avec 3 breakpoints donnés et le code devait être passé aux validateurs W3C.",
             "categoryId": [1],
             "images": [
                 {
@@ -45,8 +45,8 @@
             "id": 2,
             "title": "Sophie Bluel",
             "description": "Portfolio de Sophie Bluel, architecte intérieur",
-            "context": "Notre cliente, Sophie Bluel, souhaite que nous lui developpions un portfolio avec ses différents projets d'architecte. J'ai été chargé de développer la partie front-end en Javascript.",
-            "challenge": "Dans ce projet, il a fallu que je développe les fonctions de la page de présentation, la page de connexion de l'administrateur du site et la modale permettant d'uploader de nouveau médias. Il a fallu faire en sorte que le site se mette à jour sans qu'il n'y ait de rafraichissement de la page en manipulant le DOM.",
+            "context": "Notre cliente, Sophie Bluel, souhaite que nous lui développions un portfolio avec ses différents projets d'architecte. J'ai été chargé de développer la partie front-end en Javascript.",
+            "challenge": "Dans ce projet, il a fallu que je développe les fonctions de la page de présentation, la page de connexion de l'administrateur du site et la modale permettant d'uploader de nouveaux médias. Il a fallu faire en sorte que le site se mette à jour sans qu'il n'y ait de rafraichissement de la page en manipulant le DOM.",
             "categoryId": [1],
             "images": [
                 {
@@ -141,8 +141,8 @@
             "id": 5,
             "title": "Kasa",
             "description": "Créez une application web de location immobilière avec React",
-            "context": "Je suis recruté par Kasa, leader de la location d'appartements entre particulier, en tant que freelance pour développer sa nouvelle platforme web. Le site a été codé il y a plus 10 de ans en ASP.NET et j'ai été chargé de recoder le site en React.",
-            "challenge": "Dans ce projet, il a fallu partir de la maquette fournie et coder depuis zéro le front-end avec React et React-Router. Parmi les défis à relever : créer différentes routes dans le router, créer des boites de texte ouvrables et fermables, créer un carroussel cyclique et enfin rediriger vers une page d'erreur en cas d'erreur d'URL. Tout le site devait être responsive.",
+            "context": "Je suis recruté par Kasa, leader de la location d'appartements entre particuliers, en tant que freelance pour développer sa nouvelle platforme web. Le site a été codé il y a plus de 10 ans en ASP.NET et j'ai été chargé de recoder le site en React.",
+            "challenge": "Dans ce projet, il a fallu partir de la maquette fournie et coder depuis zéro le front-end avec React et React Router Dom. Parmi les défis à relever : créer différentes routes dans le routeur, créer des boites de texte ouvrables et fermables, créer un carroussel cyclique et enfin rediriger vers une page d'erreur en cas d'erreur d'URL. Tout le site devait être responsive.",
             "categoryId": [1],
             "images": [
                 {
@@ -168,8 +168,8 @@
             "id": 6,
             "title": "Mon vieux grimoire",
             "description": "Développer le back-end d'une chaîne de librairies",
-            "context": "La chaîne de librairies souhaite ouvrir un site de notation de livres qui permettra au membres d'ajouter un nouveau livre et de mettre une note visible par le public. J'ai été chargé de developper la partie back end du site en node.js.",
-            "challenge": "Dans ce projet, il a fallu suivre le cahier des charges fourni. J'ai commencé par créer le serveur et le router grâce au framework Express et paramétrer le base de données MongoDB grâce à la bibliothèque Mongoose. J'ai créé différents middlewares pour l'authentification, la gestion des requêtes multipart et pour le retraitement des images (green code). Enfin grâce aux méthodes HTTP, j'ai créé différents controlleurs pour manipuler la base de données.",
+            "context": "La chaîne de librairies souhaite ouvrir un site de notation de livres qui permettra aux membres d'ajouter un nouveau livre et de mettre une note visible par le public. J'ai été chargé de développer la partie back end du site en Node.js.",
+            "challenge": "Dans ce projet, il a fallu suivre le cahier des charges fourni. J'ai commencé par créer le serveur et le routeur grâce au framework Express et paramétrer la base de données MongoDB grâce à la bibliothèque Mongoose. J'ai créé différents middlewares pour l'authentification, la gestion des requêtes multipart et pour le retraitement des images (green code). Enfin grâce aux méthodes HTTP, j'ai créé différents controleurs pour manipuler la base de données.",
             "categoryId": [2],
             "images": [
                 {
@@ -201,7 +201,7 @@
             "title": "Mon portfolio",
             "description": "Créer mon propre portfolio",
             "context": "Afin de démontrer mes compétences acquises lors de ma formation, il a fallu que j'imagine et crée mon portfolio décrivant les projets effectués",
-            "challenge": "Dans ce projet, il a fallu que je développe en peu de temps mon portfolio depuis 0. J'ai donc conçu mon site avec une courte description, un carroussel (bibliothèque externe) exposant mes compétences ainsi que des cards cliquable ouvrant une modale exposant le projet réalisé. J'ai choisi de faire mon portfolio en React et en SCSS pour continuer à me former sur ces technologies. Les données sont stockés dans un fichier Json.",
+            "challenge": "Dans ce projet, il a fallu que je développe en peu de temps mon portfolio depuis 0. J'ai donc conçu mon site avec une courte description, un carroussel (bibliothèque externe) exposant mes compétences ainsi que des cards cliquables ouvrant une modale exposant le projet réalisé. J'ai choisi de faire mon portfolio en React et en Sass pour continuer à me former sur ces technologies. Les données sont stockées dans un fichier Json.",
             "categoryId": [1],
             "images": [
                 {
@@ -232,9 +232,9 @@
         {
             "id": 8,
             "title": "Ferme du Trèfle Blanc",
-            "description": "Site de réservation de produits fermier Bio et Locaux",
-            "context": "La ferme du Trèfle Blanc souhaitait un site web qui mette en avant tout leur produits et que les clients puissent passer des reservations directement depuis le site.",
-            "challenge": "Dans le cadre d'une collaboration, j'ai été amené à réaliser la maquette du site en lien avec les besoins du client, le code HTML, SASS et les principaux composants Réact. J'ai également collaboré à la mise en place du serveur Back End (Création de middleware avec Express, mise en place des tables avec Maria DB). Il y a eu plusieurs réunions au cours du développement avec le client pour répondre au mieux à ses besoins.",
+            "description": "Site de réservation de produits fermiers bio et locaux",
+            "context": "La Ferme du Trèfle Blanc souhaitait un site web qui mette en avant tous leur produits et que les clients puissent passer des reservations directement depuis le site.",
+            "challenge": "Dans le cadre d'une collaboration, j'ai été amené à réaliser la maquette du site en lien avec les besoins du client, le code HTML, Sass et les principaux composants React. J'ai également collaboré à la mise en place du serveur back end (création de middlewares avec Express, mise en place des tables avec Maria DB). Il y a eu plusieurs réunions au cours du développement avec le client pour répondre au mieux à ses besoins.",
             "categoryId": [1, 2],
             "images": [
                 {
@@ -262,7 +262,7 @@
                 "sass",
                 "react",
                 "bootstrap",
-                "mariaDB",
+                "mariadb",
                 "nodejs",
                 "express"
             ],
@@ -271,10 +271,10 @@
         },
         {
             "id": 9,
-            "title": "Jardin.com",
+            "title": "Jard'in.com",
             "description": "Site de conseils et de présentation de plantes",
             "context": "Projet fictif : le client souhaitait un site où il pouvait prodiguer des conseils pour différents types de plantes.",
-            "challenge": "Dans ce projet, j'ai commencé par créer la maquette et réaliser le site en sass et réact. Ce projet utilise un fichier Json pour stocker les différentes plantes et leur catégorie. J'ai mis en place un router grâce à 'React Router Dom' et j'ai pu m'exercer sur les animations des différentes cards notamment. Le site est optimisé (plus de 90% au lightHouse) et accessible (pas d'erreur au WCAG).",
+            "challenge": "Dans ce projet, j'ai commencé par créer la maquette et réaliser le site en Sass et React. Ce projet utilise un fichier Json pour stocker les différentes plantes et leur catégorie. J'ai mis en place un routeur grâce à 'React Router Dom' et j'ai pu m'exercer sur les animations des différentes cards notamment. Le site est optimisé (plus de 90% au lightHouse) et accessible (pas d'erreur au WCAG).",
             "categoryId": [1],
             "images": [
                 {
