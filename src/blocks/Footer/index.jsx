@@ -23,7 +23,9 @@ function Footer() {
                     <img src="/../../assets/icons/in.png" alt="logo linkedIn" />
                 </a>
             </div>
-            <div>Maxime ROBIN, tous droits réservés 2023</div>
+            <div>
+                © {new Date().getFullYear()} Tous droits réservés, Maxime ROBIN
+            </div>
             <button
                 className="footer__mention"
                 onClick={() => setIsOpened(true)}
@@ -43,9 +45,10 @@ function Footer() {
                     </p>
                     <h4>Hébergement</h4>
                     <p>
-                        o2switch <br />
-                        Chemin des Pardiaux <br />
-                        63000 Clermont-Ferrand <br />
+                        IONOS SARL <br />
+                        7 place de la Gare <br />
+                        BP 70109 <br />
+                        57201 SARREGUEMINES Cedex <br />
                         France
                     </p>
                     <h4>Crédit</h4>
